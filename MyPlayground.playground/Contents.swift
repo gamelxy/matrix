@@ -93,6 +93,12 @@ class Matrix: CustomDebugStringConvertible {
         return isEqual
     }
     
+    /// Check if vector contain a subVector
+    ///
+    /// - Parameters:
+    ///   - vector: vector
+    ///   - subVector: subVector
+    /// - Returns: startIndex of the vector contain subVector
     func vectorContain(vector: Vector, subVector: Vector?) -> Int {
         guard
             let subVector = subVector,
@@ -136,7 +142,7 @@ class Matrix: CustomDebugStringConvertible {
 }
 
 class MatrixReader {
-    
+    //TODO: reader matrix data by file
 }
 
 class MatrixTest {
